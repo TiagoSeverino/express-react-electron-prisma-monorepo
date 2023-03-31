@@ -1,0 +1,16 @@
+{
+	"name": "@monorepo/electron",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "concurrently \"tsc  src/index.ts -outDir dist -w \" \"electron .\""
+	},
+	"dependencies": {
+		"electron": "^23.2.1"
+	},
+	"devDependencies": {
+		"concurrently": "^8.0.1",
+		"electron-reloader": "^1.2.3"
+	}
+}
